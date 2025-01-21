@@ -1,15 +1,20 @@
-// Display this AP 4,7,10,13,16 ... upto n terms.
+// Create a pattern 
+// 1
+// 22
+// 333
+// 4444
+// 55555
 
-
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
-    cout<<"Enter the number of terms: ";
-    int n;  
+    int n ;
+    cout << "Enter the required number: ";
     cin>>n;
-    for (int i = 1; i <= n; i++)
-    {
-        cout<<3*i+1<<endl;
+    for(int i = 1; i<=n ; i++){
+        for(int j = 1 ; j<=i ;j++){
+            cout << i ;
+        }
+        cout<<endl;
     }
-    return 0;
 }

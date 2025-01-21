@@ -1,11 +1,20 @@
-// Print all numbers from 1 to 100 that are divisible by 3.
+// Create a pattern 
+// *
+// **
+// ***
+// ****
+// *****
 
-
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
-    for(int i=3;i<=100;i+=3){
-        cout<<i<<endl;
+    int n ;
+    cout << "Enter the number of *: ";
+    cin>>n;
+    for(int i = 1; i<=n ; i++){
+        for(int j = 1 ; j<=i ;j++){
+            cout << "*" ;
+        }
+        cout<<endl;
     }
-    return 0;
 }

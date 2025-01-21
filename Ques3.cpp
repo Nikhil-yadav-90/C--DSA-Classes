@@ -1,15 +1,20 @@
-// Print the table of'n' . Here 'n' is na integer which the user will input.
+// Create a pattern 
+// 1
+// 12
+// 123
+// 1234
+// 12345
 
-
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
-    cout<<"Enter the number for Table: ";
-    int n;
+    int n ;
+    cout << "Enter the required number: ";
     cin>>n;
-    for (int i = 1; i <= 10; i++)
-    {
-        cout<<n<<" * "<<i<<" = "<<n*i<<endl;
-
+    for(int i = 1; i<=n ; i++){
+        for(int j = 1 ; j<=i ;j++){
+            cout << j ;
+        }
+        cout<<endl;
     }
 }

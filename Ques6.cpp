@@ -1,13 +1,20 @@
-// Write a program to print all the ASCII values and their equivalent characters of 26 alphabets using a while loop.
+// Create a pattern 
+// 12345
+// 1234
+// 123
+// 12
+// 1
 
-
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
-   int i = 65;
-    while(i<=90){
-         cout<<i<<" : "<<char(i)<<endl;
-         i++;
+    int n ;
+    cout << "Enter the required number: ";
+    cin>>n;
+    for(int i = 1; i<=n ; i++){
+        for(int j = 1 ; j <= n-i+1 ;j++){
+            cout << j ;
+        }
+        cout<<endl;
     }
-    return 0;
 }

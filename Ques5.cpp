@@ -1,17 +1,20 @@
-// Display this GP - 3,12,48,.. upto ‘n’ terms.
+// Create a pattern 
+// *****
+// ****
+// ***
+// **
+// *
 
-
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
-    cout<<"Enter the number of terms: ";
-    int n;  
+    int n ;
+    cout << "Enter the required number: ";
     cin>>n;
-    int val = 3;
-    for (int i = 1; i <= n; i++)
-    {
-        cout<<val<<endl;
-        val*=4;
+    for(int i = 1; i<=n ; i++){
+        for(int j = 1 ; j <= n-i+1 ;j++){
+            cout << "*" ;
+        }
+        cout<<endl;
     }
-    return 0;
 }
